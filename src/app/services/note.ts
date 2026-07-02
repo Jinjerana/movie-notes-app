@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class NoteService {
 
-  private readonly apiUrl = 'http://localhost:3000/notes'; // Replace with your actual API endpoint
+  private readonly apiUrl = 'https://movie-notes-app.onrender.com/notes';
 
   constructor(private http: HttpClient) {}
 

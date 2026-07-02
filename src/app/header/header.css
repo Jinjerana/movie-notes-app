@@ -1,0 +1,55 @@
+.site-header {
+  background: var(--purple-deep);
+  color: #fff;
+}
+
+.header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.site-header h1 {
+  color: #fff;
+  font-size: 28px;
+  letter-spacing: 0.02em;
+}
+
+.site-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header nav a {
+  color: #EAD9FF;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+}
+
+.site-header nav a:hover,
+.site-header nav a.active {
+  color: var(--orange);
+  border-bottom-color: var(--orange);
+}
+
+/* Signature-Element: Perforation wie an einer Kinokarte */
+.ticket-stripe {
+  height: 6px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--orange) 0 14px,
+    transparent 14px 24px
+  );
+}

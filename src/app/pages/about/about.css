@@ -1,0 +1,37 @@
+.about-page p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-page ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.about-page li {
+  margin-bottom: 8px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.about-page li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--orange);
+}
+
+.about-page a { font-weight: 600; }
+
+.section-label {
+  display: block;
+  font-family: 'Fraunces', serif;
+  font-size: 20px;
+  color: var(--purple-deep);
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+
+.section-label:first-child { margin-top: 0; }

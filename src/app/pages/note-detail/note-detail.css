@@ -1,0 +1,30 @@
+.note-detail-card {
+  background: #fff;
+  border-radius: var(--radius);
+  border-left: 4px dashed var(--orange);
+  padding: 28px;
+  box-shadow: 0 1px 3px rgba(59, 10, 110, 0.08);
+  max-width: 560px;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--orange-deep);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 8px;
+}
+
+.note-detail-card h2 { font-size: 26px; margin-bottom: 12px; }
+
+.content {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+time { font-size: 13px; color: var(--muted); }
+
+.not-found { color: var(--muted); font-style: italic; }

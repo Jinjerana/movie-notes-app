@@ -1,0 +1,8 @@
+<div class="note-detail-card" *ngIf="note">
+  <span class="eyebrow">Movie Note</span>
+  <h2>{{ note.title | uppercase }}</h2>
+  <p class="content">{{ note.content | noteShortener: 300 }}</p>
+  <time>{{ note.createdAt | date:'medium' }}</time>
+</div>
+
+<p class="not-found" *ngIf="!note">Note not found.</p>

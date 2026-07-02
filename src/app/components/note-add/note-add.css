@@ -1,0 +1,57 @@
+.note-form-card {
+  background: #fff;
+  border: 1px solid var(--purple-soft);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(59, 10, 110, 0.06);
+}
+
+.note-form-card h2 { margin-bottom: 16px; }
+
+.field { margin-bottom: 16px; }
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #E1D3F5;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  background: var(--cream);
+}
+
+input[type="text"]:focus, textarea:focus {
+  border-color: var(--purple);
+  outline: none;
+}
+
+textarea { resize: vertical; min-height: 90px; }
+
+.error { color: var(--orange-deep); margin-top: 4px; }
+.error small { display: block; font-size: 12px; }
+
+button[type="submit"] {
+  background: var(--purple);
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button[type="submit"]:hover:not(:disabled) { background: var(--purple-deep); }
+
+button[type="submit"]:disabled {
+  background: #C7ADEF;
+  cursor: not-allowed;
+}

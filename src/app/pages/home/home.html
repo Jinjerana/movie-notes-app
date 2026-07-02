@@ -1,0 +1,14 @@
+<h2 (click)="showAlert()">My Movie Notes</h2>
+
+<ul class="note-list">
+  <li *ngFor="let note of notes" class="note-ticket">
+    <a [routerLink]="['/note', note.id]">
+      <span class="note-title">{{ note.title }}</span>
+      <span class="note-arrow">→</span>
+    </a>
+  </li>
+</ul>
+
+<app-note-add></app-note-add>
+
+

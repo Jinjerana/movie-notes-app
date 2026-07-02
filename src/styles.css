@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --purple-deep: #3B0A6E;
+  --purple: #6D28D9;
+  --purple-soft: #F1E9FC;
+  --orange: #FF7A00;
+  --orange-deep: #C2410C;
+  --cream: #FFF8F0;
+  --ink: #241830;
+  --muted: #6B5B7A;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: 'Fraunces', serif;
+  color: var(--purple-deep);
+  margin: 0;
+}
+
+a { color: var(--purple); text-decoration: none; }
+a:hover { color: var(--orange-deep); }
+
+button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: transform .15s ease, background-color .15s ease;
+}
+button:hover { transform: translateY(-1px); }
+
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 2px;
+}

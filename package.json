@@ -1,5 +1,5 @@
 {
-  "name": "my-first-angular-app",
+  "name": "movie-notes-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:my-first-angular-app": "node dist/my-first-angular-app/server/server.mjs"
+    "serve:ssr:movie-notes-app": "node dist/movie-notes-app/server/server.mjs"
   },
   "private": true,
   "packageManager": "npm@11.6.2",

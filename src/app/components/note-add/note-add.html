@@ -1,0 +1,27 @@
+<div class="note-form-card">
+  <h2>Add a Movie Note</h2>
+
+  <form #noteForm="ngForm" (ngSubmit)="addNote(noteForm)">
+    <div class="field">
+      <label for="title">Title</label>
+      <input type="text" id="title" name="title" [(ngModel)]="newNote.title" required minlength="2" maxlength="100" #titleRef="ngModel"/>
+      <div class="error" *ngIf="submitted && titleRef.invalid">
+        <small *ngIf="titleRef.errors?.['required']">Title is required.</small>
+        <small *ngIf="titleRef.errors?.['minlength']">Title must be at least 2 characters long.</small>
+        <small *ngIf="titleRef.errors?.['maxlength']">Title must be no more than 100 characters long.</small>
+      </div>
+    </div>
+    <div class="field">
+      <label for="content">Content</label>
+      <textarea id="content" name="content" [(ngModel)]="newNote.content" required minlength="2" #contentRef="ngModel"></textarea>
+      <div class="error" *ngIf="submitted && contentRef.invalid">
+        <small *ngIf="contentRef.errors?.['required']">Content is required.</small>
+        <small *ngIf="contentRef.errors?.['minlength']">Content must be at least 2 characters long.</small>
+      </div>
+    </div>
+
+    <button type="submit" [disabled]="submitted">Add note</button>
+  </form>
+</div>
+
+

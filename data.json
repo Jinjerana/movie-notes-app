@@ -1,0 +1,41 @@
+{
+  "notes": [
+    {
+      "id": "1",
+      "title": "Inception",
+      "content": "Loved it, but I still need a 3-hour YouTube video to explain the ending to me. Is the top spinning or not? My brain hurts.",
+      "createdAt": "2026-06-01T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "title": "Titanic",
+      "content": "Unpopular opinion: There was definitely enough room on that wooden door for Jack. Rose just wanted the entire bed to herself.",
+      "createdAt": "2026-06-02T11:30:00Z"
+    },
+    {
+      "id": "3",
+      "title": "The Matrix",
+      "content": "Took the red pill. Still waiting for kung fu downloads to finish. If I see a black cat walk past twice, I'm logging off.",
+      "createdAt": "2026-06-03T14:15:00Z"
+    },
+    {
+      "id": "FBsmXbjpxiY",
+      "title": "Horror Movies",
+      "content": "Pro tip for survival: If your house starts whispering to you, don't look for the basement key. Just pack your bags and move to a hotel.",
+      "createdAt": "2026-07-01T12:55:51.396Z"
+    },
+    {
+      "id": "ZVq5n3CgSI4",
+      "title": "Interstellar",
+      "content": "Hans Zimmer did not have to go that hard on the organ, but I'm glad he did. Also, don't go near black holes unless you want to miss your kid's graduation.",
+      "createdAt": "2026-07-01T13:13:38.105Z"
+    },
+    {
+      "id": "sH6dvIjfvxk",
+      "title": "Thriller Mini-Series",
+      "content": "Mission: Find a mystery show where the actual killer isn't the strangely overly helpful local detective introduced in episode 2.",
+      "createdAt": "2026-07-01T14:26:43.232Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

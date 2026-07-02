@@ -1,0 +1,9 @@
+<footer class="site-footer">
+  <p class="copy">© 2026 Movie Notes. All Rights Reserved.</p>
+
+  <div class="subscribe">
+    <p class="greeting" *ngIf="username">Hey, {{ username }} 👋</p>
+    <input type="text" [(ngModel)]="username" placeholder="Your Name" />
+    <button (click)="onSubscribeClick()">Subscribe</button>
+  </div>
+</footer>

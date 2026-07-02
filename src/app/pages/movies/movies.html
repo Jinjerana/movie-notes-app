@@ -1,0 +1,16 @@
+<h2>Search Movies</h2>
+
+<div class="search-bar">
+  <input type="text" [(ngModel)]="searchTitle" placeholder="Enter movie title" />
+  <button (click)="searchMovies()">Search</button>
+</div>
+
+<p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+
+<div class="movies-grid" *ngIf="movies.length > 0">
+  <div class="movie-card" *ngFor="let movie of movies">
+    <img [src]="movie.Poster" alt="{{ movie.Title }}" />
+    <h3>{{ movie.Title }} ({{ movie.Year }})</h3>
+    <p>{{ movie.Type }}</p>
+  </div>
+</div>

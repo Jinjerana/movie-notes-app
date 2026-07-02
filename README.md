@@ -1,59 +1,102 @@
-# MyFirstAngularApp
+A small Angular application for creating and managing notes about movies, combined with a movie search feature.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.14.
+## Features
 
-## Development server
+- Create, view, and browse notes
+- Search for movies via an external API
+- Custom design (purple/orange, "movie ticket" look)
+- Persistent storage via a REST API (json-server)
+- Form validation with Angular Template-driven Forms
 
-To start a local development server, run:
+## Tech Stack
+
+- [Angular](https://angular.dev/) (Standalone Components, Signals)
+- [json-server](https://github.com/typicode/json-server) as a local mock backend
+- TypeScript, HTML, CSS
+
+## Prerequisites
+
+- [Node.js](https://nodejs.org/) (recommended: latest LTS version)
+- [Angular CLI](https://angular.dev/tools/cli)
+
+```bash
+npm install -g @angular/cli
+```
+
+## Installation
+
+1. Clone the repository
+
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/movie-notes-app.git
+   cd movie-notes-app
+   ```
+
+2. Install dependencies
+
+   ```bash
+   npm install
+   ```
+
+## Running the project
+
+This project needs **two** processes running at the same time: the Angular frontend and the json-server backend.
+
+**Terminal 1 – Start the backend:**
+
+```bash
+npx json-server --watch data.json --port 3000
+```
+
+The backend will then be available at `http://localhost:3000`.
+
+**Terminal 2 – Start the frontend:**
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+The app will then be available at `http://localhost:4200/`.
 
-## Code scaffolding
+## Project structure
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── header/
+│   │   ├── footer/
+│   │   ├── home/
+│   │   ├── about/
+│   │   ├── movies/
+│   │   ├── note-add/
+│   │   └── note-detail/
+│   ├── models/
+│   │   └── note.models.ts
+│   ├── services/
+│   │   └── note.ts
+│   └── pipes/
+│       └── note-shortener.pipe.ts
+data.json          # Mock database for json-server
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Available scripts
 
-```bash
-ng generate --help
-```
+| Command                                           | Description                       |
+| -------------------------------------------------- | ---------------------------------- |
+| `ng serve`                                          | Starts the Angular dev server      |
+| `ng build`                                          | Creates a production build         |
+| `npx json-server --watch data.json --port 3000`     | Starts the mock backend            |
 
-## Building
+## Routes
 
-To build the project run:
+| Path          | Description              |
+| ------------- | -------------------------- |
+| `/`           | Overview of all notes      |
+| `/note/:id`   | Detail view of a note      |
+| `/movies`     | Movie search                |
+| `/about`      | About the app               |
 
-```bash
-ng build
-```
+## License
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is for learning purposes.
